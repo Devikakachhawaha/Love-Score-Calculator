@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+/* body{
+    background-color: #87D7D4;
+  
+} */
+body {
+    background-color: #87D7D4;
+    overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+    position: relative; /* Ensure confetti is positioned relative to the body */
+}
+.love{
+    display: flex;
+    color: white;
+    font-family: 'Borel', cursive;
+}
+
+h1{
+    font-size: 50px;
+     font-weight:bolder ;
+}
+
+input{
+    border: 2px solid #FFC2C7;
+    border-radius: 10px;
+    width: 250px;
+}
+button {
+    display: block; /* Change display to block */
+    border: 2px solid #FFC2C7;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 10px; /* Optional: Add some spacing between the button and the inputs */
+}
+
+label{
+    font-size: 30px;
+    font-weight: lighter;
+}
+#loveScoreDisplay {
+    font-size: 24px; 
+    padding-top: 10px;
+}
+/* Confetti animation */
+.confetti {
+    position: absolute;
+    font-size: 20px; /* Adjust the size of the icon */
+    color: red; /* Adjust the color of the icon */
+    animation: fall 1s linear forwards; /* Increase animation duration to speed up */
+}
+
+@keyframes fall {
+    0% { 
+        transform: translateY(-100vh) translateX(50vw) rotate(0deg); /* Start from top */
+    }
+    100% { 
+        transform: translateY(100vh) translateX(-50vw) rotate(720deg); /* End at bottom */
+    }
+}

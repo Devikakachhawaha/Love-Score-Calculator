@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Score</title>
+</head>
+<body>
+    <div class="love">
+        <div class="image">
+            <img width="600px" height="500px" src="images/OM0WUP0.jpg" alt="">
+        </div>
+        <div class="main">
+            <h1>Calculate The Love Score</h1>
+            <form class="box" id="loveForm">
+                <label for="fname">Enter your name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Enter your partner's name:</label><br>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <button type="submit" id="calculateButton">Calculate</button>
+            </form>
+            <div id="loveScoreDisplay"></div> <!-- Element to display the love score -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
